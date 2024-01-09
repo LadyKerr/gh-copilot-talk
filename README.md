@@ -1,5 +1,6 @@
 # Code Smarter not Harder with GitHub Copilot 🤖
-Talk on Jan 9th with CFE.dev
+
+![GitHub Copilot](https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/fbeeed3f-7a00-4b01-90a5-a4ea495a0f1c)
 
 ## What is GitHub Copilot?
 
