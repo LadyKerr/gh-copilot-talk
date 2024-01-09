@@ -1,21 +1,28 @@
 ---
 theme: seriph
-background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/fbeeed3f-7a00-4b01-90a5-a4ea495a0f1c
+background: >-
+  https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/fbeeed3f-7a00-4b01-90a5-a4ea495a0f1c
 title: Code Smarter not Harder with GitHub Copilot
-favicon: ""
-font: "Playfair Display"
+favicon: ''
+font: Playfair Display
 layout: cover
 lineNumbers: true
 transition: fade
-record: 'dev'
+record: dev
 download: true
-exportFilename: 'gh-copilot-101'
+exportFilename: gh-copilot-101
 export:
   format: pdf
   timeout: 30000
   dark: false
   withClicks: false
 ---
+
+
+
+<!--
+Hello good morning! Thank you all for being here with me today to learn how to get the most ourt of GitHub Copilot.
+-->
 
 ---
 layout: image-right
@@ -24,6 +31,21 @@ transition: fade-out
 ---
 
 # Hi! I'm Kedasha!
+
+- Jamaican gyal! 🇯🇲
+- Developer Advocate at GitHub
+- Software Engineer for ~3 years
+- Technical Content Creator ✨
+- Addicted to TikTok!😬
+- Committed to teaching and learning in public
+
+<br>
+
+I love, love, love creating technical content on Instagram, Tiktok and sometimes Twitter. 
+
+**Find me online @itsthatladydev**
+
+<img src="" alt="social media images">
 
 <style>
 h1 {
@@ -332,15 +354,14 @@ Top tip: The better the input, the better the output.
 -->
 
 ---
-transition: fade-out
 layout: center
+transition: fade-out
 ---
-
-# D E M O S
+# DEMOS
 
 <style>
 h1 {
-  background-color: #40C9FF;
+  background-color: #E81CFF;
   background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -350,11 +371,78 @@ h1 {
 }
 </style>
 
----
-transition: fade-out
----
+<!---
+Demo #1 - Split nutrition data in a new line so it's easier to read
 
-<img src="https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/9ac867c8-1ac1-45a7-b2e1-66f20bce4ad0" alt="GitHub Copilot" width="100%"/>
+
+Create a new file called `NutritionFacts.js`
+Add a high level comment to the top of the file:
+
+```
+Create a component with the following specifications:
+
+1. the component must split the received string data at /n/n or /n and return a Typography component for each string
+2. the component must set a unique key for each Typography component
+3. the component must return a div with the Typography components and return null if the data is not a string
+
+```
+
+This address tips: high level comment, open files, includes & references
+
+———
+
+Demo #2: Add a Footer Component
+ 
+
+Prompt #1:
+Add a footer component that says Made with love by LadyKerr & GitHub Copilot
+
+
+Prompt #2:
+Create a footer component with the following specifications:
+
+1. The footer must be fixed at the bottom of the page
+2. Use the Paper and Typography components from Material UI
+3. The footer text must say "Made with ❤️ by LadyKerr & GitHub Copilot"
+4. The text "GitHub Copilot" must be a link to https://copilot.github.com/ that opens in a new tab with alt text “GitHub copilot"
+
+
+> This address tips: high level comment, open files, includes & references, meaningful names
+
+
+——
+
+Demo 3: Add Documentation for a few functions
+
+Demo 4: Generate unit test for a function
+
+Demo 5: Check browser console for errors and have copilot explain it
+
+Demo 6: Click source control button and generate a commit message
+
+Demo 7: Copilot CLI explain a command and generate a command
+
+Demo 8: Copilot for PRs - generate a PR description
+
+Demo 9: Copilot on dotcom - ask questions about slidev repo
+
+——
+
+Demo 10: Add theme for material UI to app (if time)
+
+Prompt #1:
+
+how do I add the custom color "ffc500" to the appbar component?
+
+Your response if MUI:
+
+createMuiTheme is deprecated
+
+Prompt #2:
+
+where do I create the custom theme?
+
+-->
 
 ---
 transition: fade-out
@@ -380,6 +468,20 @@ transition: fade-out
 
 # Resources
 
+- [Coding with an AI Pair Programmer](https://youtu.be/dhfTaSGYQ4o?si=wdhu3C7uwG5cqX0K)
+- [What's new with GitHub Copilot from VsCode team](https://twitter.com/code/status/1737903911237718467)
+- [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
+- [Prompting GitHub Copilot Chat to become your personal AI assistant for accessibility](https://github.blog/2023-10-09-prompting-github-copilot-chat-to-become-your-personal-ai-assistant-for-accessibility/)
+- [How to build a GPT-3 App with Nextjs, React, and GitHub Copilot](https://github.blog/2023-07-25-how-to-build-a-gpt-3-app-with-nextjs-react-and-github-copilot/)
+- [Demo repo - MealMetrics](https://github.com/LadyKerr/mealmetrics-copilot)
+- [Code Smarter not Harder slides and repo](https://github.com/LadyKerr/gh-copilot-talk)
+
+<br>
+<br>
+
+Kedasha Kerr | @itsthatladydev | Developer Advocate @ GitHub
+Find me on all socials!
+
 <style>
 h1 {
   background-color: #40C9FF;
@@ -391,9 +493,3 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
-
-
-
-
-
-
