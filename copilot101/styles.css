@@ -1,0 +1,17 @@
+.slidev-layout.cover.text-center.slidev-page.slidev-page-1 {
+    background-image: url("https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/6168aade-822f-4f08-b89d-a0c90c83b4d3") !important;
+}
+
+.slidev-layout.cover.text-center.slidev-page.slidev-page-8 {
+    background-image: url("https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/c0ff1e77-0a06-4535-819b-dcbf6805845f") !important;
+}
+
+.slidev-layout.cover.text-center.slidev-page.slidev-page-9 {
+    background-image: url("https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/dd25aa40-9338-4417-ac08-f5fa743e4342") !important;
+}
+
+.slidev-layout.cover.text-center.slidev-page.slidev-page-11 {
+    background-image: url("https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/dd25aa40-9338-4417-ac08-f5fa743e4342") !important;
+}
+
+/* override global styles that added linear gradient to background images that had the cover tyope layout */

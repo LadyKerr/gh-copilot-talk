@@ -1,75 +1,85 @@
 ---
 theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
-class: text-center
-highlighter: shikiji
-lineNumbers: false
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-drawings:
-  persist: false
-transition: slide-left
-title: Welcome to Slidev
-mdc: true
+background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/6168aade-822f-4f08-b89d-a0c90c83b4d3
+title: Code Smarter not Harder with GitHub Copilot
+favicon: ""
+font: "Playfair Display"
+layout: cover
+lineNumbers: true
+transition: fade
+record: 'dev'
+download: true
+exportFilename: 'gh-copilot-101'
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: false
 ---
 
-# Welcome to Slidev
+---
+layout: image-right
+image: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/7d0e2430-c5c9-483a-b8eb-afcda71e80f8
+transition: fade-out
+---
 
-Presentation slides for developers
+# Hi! I'm Kedasha!
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+---
+layout: intro
+transition: fade-out
+---
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+# What we'll cover:
+
+- What is GitHub Copilot?
+- What is GitHub Copilot good for?
+- BTS of GitHub Copilot Extension/Plugin
+- Tips to get the most out of GitHub Copilot
+- Live Demos
+- Review
+- Q&A
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 transition: fade-out
 ---
 
-# What is Slidev?
+# What is GitHub Copilot?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+### GitHub Copilot is an AI pair programmer that helps you write code faster.
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+<br> 
 
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
+<img src="https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/b3b0193f-913f-49b3-860e-9659db72a348" alt="GitHub Copilot" width="100%"/>
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -79,366 +89,260 @@ h1 {
 </style>
 
 <!--
-Here is another comment.
+It is designed to help with programming tasks and serves as your assistant while you're working in your IDE.
 -->
 
 ---
-layout: default
+transition: fade-out
 ---
 
-# Table of contents
+# What is GitHub Copilot?
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+### You can use GitHub Copilot in your IDE. 
+### It is available in VSCode, Neovim, Jetbrain IDE and Visual Studio.
 
-<Toc maxDepth="1"></Toc>
+<br>
+<br>
 
----
-transition: slide-up
-level: 2
----
+![Image](https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/e39af215-9314-4524-8c23-eb3e0b280308)
 
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover![^1]
-
-```ts {all|5|1-6|9|all} twoslash
-// TwoSlash enables TypeScript hover information and errors in markdown code blocks
-// Learn more at https://www.typescriptlang.org/dev/twoslash/
-function getUser(id: number): User {
-  return undefined as any
-}
-function saveUser(id: number, user: User) {
-  // ...
-}
-// ---cut---
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-// ^?
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
 
 <style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+h1 {
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 </style>
 
 ---
+transition: fade-out
+---
 
-# Components
+# What is GitHub Copilot good for?
 
-<div grid="~ cols-2 gap-4">
-<div>
+- 🛠️ Boilerplate code and frameworks
+- 🤷🏽‍♀️ Uncommon or confusing syntax
+- 🔗 Pattern matching
+- 👨🏽‍💻 Writing code faster
+- ⛓️ Cron jobs and regex
+- 👀 Helping you remember things you forgot
+- 💻 Extending and refactoring existing code
+- 🔖 Explaining unfamiliar code
+- 📝 Documentation (which we all love to write!)
+- 🚨 Understandiing error messages (and fixing it!)
+- 🧪 Writing unit tests
 
-You can use Vue components directly inside your slides.
+. . . and much more! 🚀
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+<style>
+h1 {
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
-```html
-<Counter :count="10" />
-```
+---
+transition: fade-out
+---
 
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
+# Limitations of GitHub Copilot 
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+- Training data impacts the quality of suggestions
+- GitHub copilot != Compiler
+- The AI cannot read your mind 
+- The AI is not a replacement for good coding practices
 
-</div>
-<div>
+<style>
+h1 {
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
-```html
-<Tweet id="1390115482657726468" />
-```
+---
+transition: fade-out
+layout: image-left
+image: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/c61055e8-7e8f-4b26-9f2a-a2074696863f 
+---
 
-<Tweet id="1390115482657726468" scale="0.65" />
+# BTS of GitHub Copilot Extension/plugin
 
-</div>
-</div>
+### GitHub Copilot draws context from the code you're working on to provide you with code suggestions.
+
+<br>
+<br>
+
+## But what is included in this context? 🤔
+
+<style>
+h1 {
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+layout: cover
+background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/c0ff1e77-0a06-4535-819b-dcbf6805845f
+---
 
 <!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
+Now let's zero in on the code completion feature of GitHub Copilot. 
 
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
+When we look at the gh copilot ide extension, we see that it draws context from the code you're working on to provide you with code suggestions. 
+
+As you're coding and as you add comments, GitHub Copilot will use that information to generate suggestions.
+
+As you're typing your code and comments, context is sent up to GitHub Copilot. GitHub Copilot then uses the OpenAI LLM BTS, parses your requests and then returns a suggestion based on your request in your IDE. At this point, you can accept, reject or modify the provided suggestion.
+
+This then means that you're able to provide as much context as possible to GitHub Copilot to get the best suggestions.
+
+Today, I want to share with you 6 tips to get the most out of GitHub Copilot.
+
+-->
+
+
+---
+transition: fade-out
+layout: cover
+background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/dd25aa40-9338-4417-ac08-f5fa743e4342
+---
+<!--
+So, how can we help GitHub Copilot help us?
+The best thing we can do is to provide as much context as possible.
+
+Here are 6 tips to ensure that you're giving the best context to GitHub Copilot:
+
+**1 - Open Files**
+Copilot looks at the current and open files in your editor to analyze the context and create appropriate suggestions.
+
+Having your files open provides copilot with context. When you have additional files open, it will help to inform the completion that is returned. Remember if a file is closed, copilot cannot see that file's content. So have a few files open in your IDE to give GitHub Copilot a bigger picture of your project.
+
+**2 - Provide a Top-level Comment**
+Just as you would give a brief, high level intro to a coworker, a top level comment in the file you're working in can help Copilot understand the overall context of the pieces you will be creating.
+
+This gives gh copilot a goal on what to work on. It helps to guide copilot to give better completions.
+
+**3 - Appropriate Includes and references**
+It's best to manually set the includes or module references you need for your work.
+
+Copilot can make suggestions, but you likely know best what dependencies you'll need to include.
+
+This can also help let Copilot know what frameworks, libraries, and their versions you'd like it to use when crafting suggestions.
+
+
+**4 - Meaningful names matter!**
+The name of your variables and functions matter. If you have a function named `foo` or `bar`, gh copilot will not be able to give you a good completion because it isn't able to infer intent from the name.
+
+Just as the function name `fetchData()` won't mean much to a coworker (or you after a few months), `fetchData()` won't mean much to copilot either.
+
+A lack of good coding practices will show up when you start using GitHub Copilot.
+
+**5 - Specific and well scoped function comments**
+Commenting your code helps you to get very specific targeted completions.
+
+A function name can only be so descriptive without being overly long so function comments can help fill in details that Copilot might need to know.
+
+Remember: Single, Specific, Short comments helps copilot provide better context.
+
+**6 - Provide Sample Code**
+Providing sample code to Copilot will help it determine what you're looking for. This helps to ground the model and provide it with more context.
+
+It also helps gh copilot generate suggestions that match the language and tasks you want to achieve.
+
+This can be especially helpful to jump start Copilot to a newer library version when it defaults to providing older code suggestions.
+
+**Remember - Trust but verify!**
+Do not trust the completion blindly. Always verify the completion before accepting it.
+
+Top tip: The better the input, the better the output.
+
 -->
 
 ---
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
-
----
+transition: fade-out
 layout: center
-class: text-center
 ---
 
-# Learn More
+# D E M O S
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+<style>
+h1 {
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+transition: fade-out
+---
+
+<img src="https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/dd25aa40-9338-4417-ac08-f5fa743e4342" alt="GitHub Copilot" width="100%"/>
+
+---
+transition: fade-out
+layout: center
+---
+
+# Questions?
+
+<style>
+h1 {
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+---
+transition: fade-out
+---
+
+# Resources
+
+<style>
+h1 {
+  background-color: #40C9FF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+
+
+
+
