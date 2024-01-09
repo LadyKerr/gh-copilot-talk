@@ -1,4 +1,4 @@
-# Code Smarter not harder with GitHub Copilot - how to get the most out of your AI pair programmer 🤖
+# Code Smarter not harder with GitHub Copilot - tips to get the most out of your AI pair programmer 🤖
 > Demo repo: https://github.com/LadyKerr/mealmetrics-copilot/tree/demo on `demo` branch
 
 ## Outline:
@@ -137,7 +137,8 @@ Top tip: The better the input, the better the output.
 
 ## D E M O S 🎉
 
-Demo repo: https://github.com/LadyKerr/mealmetrics-copilot/tree/demo on `demo` branch
+> Demo repo: https://github.com/LadyKerr/mealmetrics-copilot/tree/demo on `demo` branch
+> recipe: 1 cup of all purpose flour, sifted 1 1/2 teaspoon baking powder 1/4 teaspoon salt 2 Tablespoon granulated sugar 1/2 Tablespoon unsalted butter, room temperature Approximately 1/3 cup water
 
 ### Demo 1: Split nutrition data in a new line so it's easier to read
 
