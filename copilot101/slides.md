@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/6168aade-822f-4f08-b89d-a0c90c83b4d3
+background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/fbeeed3f-7a00-4b01-90a5-a4ea495a0f1c
 title: Code Smarter not Harder with GitHub Copilot
 favicon: ""
 font: "Playfair Display"
@@ -37,6 +37,17 @@ h1 {
 }
 </style>
 
+<!--
+
+Hello! I'm Kedasha Kerr and Im a Developer Advocate at GitHub. 
+
+Im super excited to talk to you about GitHub Copilot and how to get the most out of this tool. 
+
+I know that AI has been the most used buzz word in the tech industry as of late and sometimes we may have the expectation that the AI tool we're implenting will do all the work for us. But just as we need to learn how to use a new framework or library, we also need to learn how to make AI tools work for us to get the results that we need. 
+
+Today, I'll be sharing some pragmatic ways to get the most out of GitHub Copilot during your day to day development.
+-->
+
 ---
 layout: intro
 transition: fade-out
@@ -64,6 +75,10 @@ h1 {
 }
 </style>
 
+<!--
+We'll take a brief look at what GitHub Copilot is, what it's good for, how it works, tips to get the most out of it, and then we'll do some live demos.
+-->
+
 ---
 transition: fade-out
 ---
@@ -89,7 +104,15 @@ h1 {
 </style>
 
 <!--
-It is designed to help with programming tasks and serves as your assistant while you're working in your IDE.
+
+But first, what is GitHub Copilot? :thinking:
+
+Just in case you didn't know, GitHub Copilot is an AI pair programmer that helps you write code faster. It is designed to help with programming tasks and serves as your assistant while you're working in your IDE.
+
+GitHub Copilot is comprised of a suite of products that goes beyond code completion.
+
+Some of the tools that accompany GitHub Copilot includes a chat interface that you can use in your IDE, a command line tool via a GitHub CLI extension, GitHub Copilot for PRs, Copilot integrated into dotcom and many more. Today, we'll be looking at a few of the features that I've found to be most useful during my everyday development.
+
 -->
 
 ---
@@ -102,9 +125,10 @@ transition: fade-out
 ### It is available in VSCode, Neovim, Jetbrain IDE and Visual Studio.
 
 <br>
-<br>
 
-![Image](https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/e39af215-9314-4524-8c23-eb3e0b280308)
+![various-ide-copilot](https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/e39af215-9314-4524-8c23-eb3e0b280308)
+
+![lprogramming-langauges](https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/94e3f958-bb51-4b47-b698-f6da3a992483)
 
 
 <style>
@@ -118,6 +142,12 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+<!--
+To install it you'll go to your respective marketplaces for your IDE and install the extension. Once ut's installed you'll need to authenticate with your GitHub account. and if you have accesss, you'll be able to use GitHub Copilot in your IDE.
+
+And it works with many languages - especially open source languages like javascript, typescript, python, java, python, go, ruby, and more.
+-->
 
 ---
 transition: fade-out
@@ -151,13 +181,18 @@ h1 {
 }
 </style>
 
+<!--
+Now what is GitHub Copilot good for?
+
+Many things! Some of what it's best at is . . .
+-->
+
 ---
 transition: fade-out
 ---
 
-# Limitations of GitHub Copilot 
+# Some Limitations of GitHub Copilot 
 
-- Training data impacts the quality of suggestions
 - GitHub copilot != Compiler
 - The AI cannot read your mind 
 - The AI is not a replacement for good coding practices
@@ -173,6 +208,17 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+<!--
+It cannot read minds, although it sometimes feels like it can. It’s not a compiler, and it’s not a replacement for good coding practices. Actually if you have bad coding practices this will be more apparent when you use the AI because it uses the patterns in your code to give you suggestions.
+
+This means, if you have bad coding practices, you’ll get bad suggestions. So it’s important to keep that in mind when you’re using it.
+
+Also, one of the most important points I want to drive home today is that - GitHub Copilot is a tool that can help you write code faster, and it’s up to you to decide how to use it. 
+
+It is not here to do your work for you or to write everything for you. It will guide you and nudge you in the right direction just as a coworker would if you asked them questions or for guidance on a particular issue.
+
+-->
 
 ---
 transition: fade-out
@@ -204,7 +250,7 @@ h1 {
 ---
 transition: fade-out
 layout: cover
-background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/c0ff1e77-0a06-4535-819b-dcbf6805845f
+background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/02d1e0ce-8df1-483e-be84-4aa29235e4ef
 ---
 
 <!--
@@ -226,7 +272,7 @@ Today, I want to share with you 6 tips to get the most out of GitHub Copilot.
 ---
 transition: fade-out
 layout: cover
-background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/dd25aa40-9338-4417-ac08-f5fa743e4342
+background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/9ac867c8-1ac1-45a7-b2e1-66f20bce4ad0
 ---
 <!--
 So, how can we help GitHub Copilot help us?
@@ -239,10 +285,12 @@ Copilot looks at the current and open files in your editor to analyze the contex
 
 Having your files open provides copilot with context. When you have additional files open, it will help to inform the completion that is returned. Remember if a file is closed, copilot cannot see that file's content. So have a few files open in your IDE to give GitHub Copilot a bigger picture of your project.
 
+
 **2 - Provide a Top-level Comment**
 Just as you would give a brief, high level intro to a coworker, a top level comment in the file you're working in can help Copilot understand the overall context of the pieces you will be creating.
 
 This gives gh copilot a goal on what to work on. It helps to guide copilot to give better completions.
+
 
 **3 - Appropriate Includes and references**
 It's best to manually set the includes or module references you need for your work.
@@ -259,6 +307,7 @@ Just as the function name `fetchData()` won't mean much to a coworker (or you af
 
 A lack of good coding practices will show up when you start using GitHub Copilot.
 
+
 **5 - Specific and well scoped function comments**
 Commenting your code helps you to get very specific targeted completions.
 
@@ -266,12 +315,14 @@ A function name can only be so descriptive without being overly long so function
 
 Remember: Single, Specific, Short comments helps copilot provide better context.
 
+
 **6 - Provide Sample Code**
 Providing sample code to Copilot will help it determine what you're looking for. This helps to ground the model and provide it with more context.
 
 It also helps gh copilot generate suggestions that match the language and tasks you want to achieve.
 
 This can be especially helpful to jump start Copilot to a newer library version when it defaults to providing older code suggestions.
+
 
 **Remember - Trust but verify!**
 Do not trust the completion blindly. Always verify the completion before accepting it.
@@ -303,7 +354,7 @@ h1 {
 transition: fade-out
 ---
 
-<img src="https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/dd25aa40-9338-4417-ac08-f5fa743e4342" alt="GitHub Copilot" width="100%"/>
+<img src="https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/9ac867c8-1ac1-45a7-b2e1-66f20bce4ad0" alt="GitHub Copilot" width="100%"/>
 
 ---
 transition: fade-out
