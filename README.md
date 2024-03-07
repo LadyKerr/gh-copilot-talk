@@ -9,3 +9,12 @@ GitHub Copilot is an AI pair programmer that helps you write code faster. GitHub
 You can use it in your favorite editor - Visual Studio, Visual Studio Code, many JetBrains IDEs (Pycharm, RubyMine, WebStorm, IntelliJ and more), Neovim and also works with Azure Data Studio.
 
 You will install the AI assistant as an extension and if you're using jetbrains IDEs, you will install it as a plugin.
+
+## Getting Started Locally
+- clone repo
+- `cd` into the project, then `cd` into `copilot-101` directory
+- open terminal and run `npm i`
+- to start presentation, run `npm run dev` this will open up the presentation for ya or you can click the link in your terminal
+- you can make changes to the slides by editing the `slides.md` file
+
+Learn more about slidev by visiting their docs site: https://sli.dev/guide/
