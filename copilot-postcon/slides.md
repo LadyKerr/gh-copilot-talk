@@ -77,7 +77,7 @@ transition: fade-out
 
 - What is GitHub Copilot?
 - Tips to get the most out of GitHub Copilot
-- Live Demos
+- Live Demos + Postman Testing with PostBot
 - Review
 - Q&A & Resources
 

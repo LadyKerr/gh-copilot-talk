@@ -5,7 +5,7 @@
 - Intro
 - What is GitHub Copilot (refresher)?
 - Tips to get the most out of GitHub Copilot
-- Demo: Building a fragrance api with gh Copilot
+- Demo: Building a fragrance api with gh Copilot + using Postman Testing LIVE
 - Demo: Copilot on dotcom (Copilot for PR, chatting with a repo)
 - QR Code with Resources
 - Wrapup
@@ -17,6 +17,7 @@
 
 ## Demos:
 
+### Demo repo: https://github.com/LadyKerr/noseknows-pycon 
 - Build the api
 - create a noseknows-pycon repo to use LIVE
 - the repo has a frontend app, dataset, a jupyter notebook and the exported model
@@ -27,5 +28,9 @@
 - TODO: create an issue in the repo: Investigate lastest Flask version (look at copilot enterprise blog on bing integration)
 - click on copilot and ask: what is the latest version of flask?
 
-- Open a PR and use copilot summary
-- generate a summary of changes quickly
+- Open a PR and use copilot summary 
+- generate a summary of changes quickly 
+
+- add postcon2024 to the top of slides 
+- April 19th slides and video demo are due 
+- record full demo as a backup 
