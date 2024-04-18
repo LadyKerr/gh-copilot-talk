@@ -104,7 +104,8 @@ Do not trust the completion blindly. Always verify the completion before accepti
 Top tip: The better the input, the better the output.
 
 # Demo: Building a fragrance api with gh Copilot
-> Demo repo: https://github.com/LadyKerr/noseknows-demo 
+> Demo repo: https://github.com/LadyKerr/noseknows-demo
+> Detailed demo steps: https://docs.google.com/document/d/1MuMBmCppeS7FoDgLXinH0D87TXODi7yqLEByslRk1QY/edit 
 
 > have copilot explain the KNN algorithm
 - generate a  new recommendation route
