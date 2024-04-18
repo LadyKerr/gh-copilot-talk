@@ -1,20 +1,7 @@
-# Code Smarter not Harder with GitHub Copilot 🤖
+# GitHub Copilot Talks ✨
 
-![GitHub Copilot](https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/fbeeed3f-7a00-4b01-90a5-a4ea495a0f1c)
+This repository holds reusable GitHub Copilot talks that I've built/given.
 
-## What is GitHub Copilot?
-
-GitHub Copilot is an AI pair programmer that helps you write code faster. GitHub Copilot draws context from the code you’re working on, suggesting whole lines or entire functions. It helps you quickly discover alternative ways to solve problems, write tests, and explore new APIs without having to tediously tailor a search for answers on the internet. GitHub Copilot is powered by OpenAI GPT-4(?), a new AI system created by OpenAI.
-
-You can use it in your favorite editor - Visual Studio, Visual Studio Code, many JetBrains IDEs (Pycharm, RubyMine, WebStorm, IntelliJ and more), Neovim and also works with Azure Data Studio.
-
-You will install the AI assistant as an extension and if you're using jetbrains IDEs, you will install it as a plugin.
-
-## Getting Started Locally
-- clone repo
-- `cd` into the project, then `cd` into `copilot-101` directory
-- open terminal and run `npm i`
-- to start presentation, run `npm run dev` this will open up the presentation for ya or you can click the link in your terminal
-- you can make changes to the slides by editing the `slides.md` file
-
-Learn more about slidev by visiting their docs site: https://sli.dev/guide/
+## Talks
+- [Copilot 101](/copilot101/): Code Smarter not Harder with GitHub Copilot 🤖
+- [Pycon Talk](/copilot-pycon/): How to get the most out of your AI Pair Programmer
