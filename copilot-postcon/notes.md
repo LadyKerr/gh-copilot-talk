@@ -121,31 +121,31 @@ Top tip: The better the input, the better the output.
 # Demo: Building a fragrance api with gh Copilot
 
 > have copilot explain the KNN algorithm
-> generate a  new recommendation route
-> test recommendation in postman
-> go back to route and ask copilot for improvements
-> accept and test in postman
-> show creating tests in postman
-> copy postman tests and ahve copilot chat translate into python tests
-> generate tests for recommendation model and save in new file with copilot
-> add some comments to the model with copilot
-> back in postman, generate docs for the api, save in a md file
-> stage and commit everything
-> use sparkle copilot to create commit message
-> oh now, committed on wrong branch
-> ghcs undo last commit and keep changes (show off copilot cli)
-> switch to correct branch
-> add and commit changes
-> push to repo
+- generate a  new recommendation route
+- test recommendation in postman
+- go back to route and ask copilot for improvements
+- accept and test in postman
+- show creating tests in postman
+- copy postman tests and ahve copilot chat translate into python tests
+- generate tests for recommendation model and save in new file with copilot
+- add some comments to the model with copilot
+- back in postman, generate docs for the api, save in a md file
+- stage and commit everything
+- use sparkle copilot to create commit message
+- oh now, committed on wrong branch
+- ghcs undo last commit and keep changes (show off copilot cli)
+- switch to correct branch
+- add and commit changes
+- push to repo
 
 ## Dotcom demo
-> copilot pr summary
-> copilot in PR to review code
-> copilot chatting with repos: go to homepage of the repo and ask whwere is KNN algorithm used
-> copilot searching bing: use that open issue about flask
+- copilot pr summary
+- copilot in PR to review code
+- copilot chatting with repos: go to homepage of the repo and ask whwere is KNN algorithm used
+- copilot searching bing: use that open issue about flask
 
 ## Wrapup
 
-> lots more to show you on how you can get the most out of the tool
-> link to blog post
-> add wr code to last slide
+- lots more to show you on how you can get the most out of the tool
+- link to blog post
+- add qr code to last slide
