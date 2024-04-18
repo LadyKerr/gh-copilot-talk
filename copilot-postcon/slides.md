@@ -30,11 +30,10 @@ transition: fade-out
 
 # Hi! I'm Kedasha!
 
-- Jamaican gyal! 🇯🇲
-- Developer Advocate at GitHub
-- Software Developer for ~4 years
-- Technical Content Creator ✨
-- Addicted to TikTok!😬
+- Jamaican gyal! 🇯🇲 
+- Developer Advocate at GitHub 
+- Software Developer for ~4 years 
+- Technical Content Creator ✨ 
 - Committed to teaching and learning in public
 
 <br>
@@ -77,7 +76,7 @@ transition: fade-out
 
 - What is GitHub Copilot?
 - Tips to get the most out of GitHub Copilot
-- Live Demos
+- Live Demo with GitHub Copilot & Postman Testing
 - Review
 - Q&A & Resources
 
@@ -145,13 +144,20 @@ background: https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/9ac8
 ---
 
 <!--
+
+So, how many of you are using GitHub Copilot today?
+
 So, how can we help GitHub Copilot help us?
 The best thing we can do is to provide as much context as possible.
+
+If you understand Large Language Models ( LLMs), you will know that they are designed to make predictions based on the context provided. This means, the more contextually rich our input or prompt is, the better the prediction or output will be.
 
 Here are 6 tips to ensure that you're giving the best context to GitHub Copilot:
 
 **1 - Open Files**
 Copilot looks at the current and open files in your editor to analyze the context and create appropriate suggestions.
+
+GitHub Copilot looks at the current open files in your editor to analyze the context, create a prompt that gets sent to the server, and return an appropriate suggestion.
 
 Having your files open provides copilot with context. When you have additional files open, it will help to inform the completion that is returned. Remember if a file is closed, copilot cannot see that file's content. So have a few files open in your IDE to give GitHub Copilot a bigger picture of your project.
 
@@ -205,9 +211,9 @@ Top tip: The better the input, the better the output.
 layout: center
 transition: fade-out
 ---
-# DEMOS
+# DEMO TIME!
 
-> repo: gh.io/pycon-demo
+### repo: gh.io/pycon-demo
 
 <style>
 h1 {
@@ -223,9 +229,25 @@ h1 {
 
 <!-- 
 
-Demo notes 
+Demo notes
 
 Building the API
+
+So instead of using OPENAI api to get recommendations, 
+
+<< open model file>>
+
+I created a custom model that uses a perfume dataset from Kaggle to generate perfume recommendations for users.
+
+I now want to take this model and build an API around it. I'll be using Flask to build the API.
+
+<<open api file>>
+
+You'll see I have a few imports already in the file and a simple hellp world route.
+
+Let's ask Copilot to help us build out the recommendation route.
+
+Ask: 
 
 -->
 
