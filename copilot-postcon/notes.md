@@ -15,21 +15,6 @@
 - [10 unexpected ways to use GitHub Copilot](https://github.blog/2024-01-22-10-unexpected-ways-to-use-github-copilot/)
 - [GitHub Copilot Enterprise is now generally available](https://github.blog/2024-02-27-github-copilot-enterprise-is-now-generally-available/)
 
-## Demos:
-
-### Demo repo: https://github.com/LadyKerr/noseknows-pycon 
-- Build the api
-- create a noseknows-pycon repo to use LIVE
-- the repo has a frontend app, dataset, a jupyter notebook and the exported model
-- we will build the flask api LIVE with Copilot
-
-- **Dotcom Demo**:
-- go to the demo repo and click on the issue about flask versions
-- TODO: create an issue in the repo: Investigate lastest Flask version (look at copilot enterprise blog on bing integration)
-- click on copilot and ask: what is the latest version of flask?
-
-- Open a PR and use copilot summary
-- generate a summary of changes quickly
 
 ## Some Notes:
  
@@ -119,6 +104,7 @@ Do not trust the completion blindly. Always verify the completion before accepti
 Top tip: The better the input, the better the output.
 
 # Demo: Building a fragrance api with gh Copilot
+> Demo repo: https://github.com/LadyKerr/noseknows-demo 
 
 > have copilot explain the KNN algorithm
 - generate a  new recommendation route
