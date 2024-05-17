@@ -10,7 +10,7 @@ lineNumbers: true
 transition: fade
 record: dev
 download: true
-exportFilename: gh-copilot-202
+exportFilename: pycon-copilot
 export:
   format: pdf
   timeout: 30000
