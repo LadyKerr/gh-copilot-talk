@@ -72,7 +72,7 @@ transition: fade-out
 # What we'll cover:
 
 - Brief Overview of GitHub Copilot
-- Tips and tricks for GitHub Copilot + VS Code 
+- Tips for using GitHub Copilot + VS Code 
 - Going Beyond your Editor 
 - Live Demo 
 - Q&A and Resources 
@@ -111,10 +111,8 @@ transition: fade-out
 
 ### The world's most widely adopted AI developer tool ✨
 
-- Maximizes Developer Happiness 🤩
-- Increases Developer Productivity 🚀
-- Accelerates Software Development 💥
-
+<br />
+<br />
 
 <img src="https://github.com/LadyKerr/try-streamlit/assets/47188731/00eefc9c-a3ae-4538-a574-6f6ed69112d8" alt="github copilot in vscode" />
 
@@ -130,19 +128,11 @@ h1 {
 }
 </style>
 
-<div class="absolute left-30px bottom-30px">
-@itsthatladydev
-</div>
-
 <!--
 
 But first, what is GitHub Copilot? :thinking:
 
 Just in case you didn't know, GitHub Copilot is an AI pair programmer that helps you write code faster. It is designed to help with programming tasks and serves as your assistant while you're working in your IDE.
-
-GitHub Copilot is comprised of a suite of products that goes beyond code completion.
-
-Some of the tools that accompany GitHub Copilot includes a chat interface that you can use in your IDE, a command line tool via a GitHub CLI extension, GitHub Copilot for PRs, Copilot integrated into dotcom and many more. Today, we'll be looking at a few of the features that I've found to be most useful during my everyday development.
 
 -->
 
@@ -225,27 +215,9 @@ h1 {
 @itsthatladydev
 </div>
 
-<!-- 
+<!--
 
-Demo notes
-
-Building the API
-
-So instead of using OPENAI api to get recommendations, 
-
-<< open model file>>
-
-I created a custom model that uses a perfume dataset from Kaggle to generate perfume recommendations for users.
-
-I now want to take this model and build an API around it. I'll be using Flask to build the API.
-
-<<open api file>>
-
-You'll see I have a few imports already in the file and a simple hellp world route.
-
-Let's ask Copilot to help us build out the recommendation route.
-
-Ask: 
+Some of the tools that accompany GitHub Copilot includes a chat interface that you can use in your IDE, a command line tool via a GitHub CLI extension, GitHub Copilot for PRs, Copilot integrated into dotcom and many more. Today, we'll be looking at a few of the features that I've found to be most useful during my everyday development.
 
 -->
 
@@ -253,9 +225,10 @@ Ask:
 layout: section
 transition: fade-out
 ---
+
 # Let's take a look!
 
-### demo repo: gh.io/streamlit
+### demo repo: **gh.io/streamlit**
 
 <style>
 h1 {
@@ -272,6 +245,12 @@ h1 {
 <div class="absolute left-30px bottom-30px">
 @itsthatladydev
 </div>
+
+<!--
+
+DEMO Doc: https://docs.google.com/document/d/1lEopGEH58CZl5BXf8f5Sie0ZXBtefWELFsCuHq8hXqQ/edit?usp=sharing 
+
+-->
 
 ---
 layout: quote
@@ -305,6 +284,7 @@ transition: fade-out
 
 # Learn more on the blog:
 
+<br />
 
 <div style="display: flex;">
   <div style="flex: 50%; padding: 10px;">
@@ -341,7 +321,7 @@ transition: fade-out
 ---
 # Thank you!
 
-### 👉🏽 gh.io/streamlit
+### 👉🏽 **gh.io/streamlit**
 <br />
 <br />
 
