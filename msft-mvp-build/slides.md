@@ -156,7 +156,7 @@ layout: intro
 ```python {5-6|7-8|9-10|11-12|13-15|all}{lines:true, startLine:5}
 def new_in_your_editor():
   new_tingz = {
-    'agents': '@workspace', '@docker',
+    'agents': '@workspace', '@docker', '@github',
     'context variables': '#file', '#codebase', '#terminalSelction',
     'sparkles': 'keep a lookout for ✨ in your editor',
     'terminal_help': 'gh-copilot in your terminal to help with debugging',
