@@ -242,11 +242,15 @@ Flash forward a few years and we had RNNs and LSTMs. RNNs were actually able to 
 
 Long Short Term Memory were able to learn from data and generate text and started to revolutionize speech recognition and machine translation in the early 2000s.
 
-Then, in 2017, Google introduced Transformer models. These models were neural networks that were able to learn context, and find relationships between words in a sentence. This was a game changer in the world of NLP and the foundation for the LLMs we have today.
+Then, in 2017, Google introduced Transformer models. Transformers were invented for a specific task: translate text from one language into another. They were able to translate text from one language to another with a high degree of accuracy. They were able to do this by understanding the context of a word in a sentence in relation to other words in the sentence. This is what makes transformers so powerful.
+
+These models were neural networks that were able to learn context, and find relationships between words in a sentence. This was a game changer in the world of NLP and the foundation for the LLMs we have today.
+
+Because of transformers, we can produce an image from text, produce audio from text, create videos from text, and even generate code from text.
 
 They are also called Foundation Models and they use attention or self attention to figure out the subtleties of language. This was revolutionary and everytime we search on Google, we are using a transformer model.
 
-Then in 2018, we got Generative Pre-trained Transformer 1 (GPT-1), the first large language model introduced by OPENAI that utilized Google's Transformer model. It had 117 million parameters which is like.
+Then in 2018, we got the Generative Pre-trained Transformer 1 (GPT-1), the first large language model introduced by OPENAI that utilized Google's Transformer model. It had 117 million parameters which is like.
 
 Once transformers and GPT-1 came to the scene, things started to move pretty rapidly. In 2018, BERT was introduced by Google. Then in 2019, we got GPT-2, from OPEN-AI, then GPT-3 in 2020. GPT-3 had 175 billion parameters and was the largest LLM at the time.
 
@@ -267,18 +271,38 @@ transition: fade-out
 
 # How do LLMs Work? How were they built?
 
-Transformers are the building blocks of LLMs ✨
-
 - Data Collection
-- Transformer Architecture
-- Training Process 
 - Tokenization
-- Optimization 
-- Evaluation
+- Vectorization and Embedding
+- Training and Optimization
+- Evaluation and Testing
 
 
 <!--
 
+Ok so when we give a text to a language model, the text is broken up into tiny pieces called tokens. Each token is then converted into a numerical representation (vector) that the model can understand. The model then uses these numerical representations to generate text that is similar to the text it was trained on.
+
+Now how does this actually work? How does a model do all this?
+
+Training a LLM typically has the folowing staps:
+- Data Collection
+- Tokenization
+- Model Training
+- Evaluation and Testing
+
+Well it all starts with Data. The first step of training a LLM is gathering large amounts of text data. Think billions and billions of words. This dataset can be collected from a variety of sources, such as books, articles, web scraping, transcripts, academic literature, etc. The more data you have, the better your model will be. However, if you have terrible data foiing into your model, you'll get terrible results. This means, if your data contains biases, racism, sexism, etc., your model will learn these biases and reproduce them in its output.
+
+So an essential step in data collection is data cleaning - removing duplicates, unimportant words of phrases, makiing all text lowercase and so on.
+
+Once we have a good dataset, the tokenization stage is next. This is where text is broken down into pieces and each piece is converted into a token. So a token could be a phrase, a single word, or punctuation.
+
+After tokenization, the tokens are converted into numerical representations that the model can understand. This prpcess is called embedding - mapping tokens to vectors (and vectors are just a list of numbers).
+
+And then once that's done, we have the training step. So the model learns to answer questions and make predictions based on the dataset. The datset is used to train it. Then we evaluate and test the model.
+
+This whole process can take weeks, months or even years to complete. And the model is trained on expensive and powerful computer chips to speed up the process.
+
+But essentially, this is how we get to have LLMs. And if you notice, it's a lot of big companies that are able to build these models because of the intense resources needed to train them.
 -->
 
 ---
@@ -288,16 +312,33 @@ transition: fade-out
 
 ## Key Terms to know
 - Tokens
+- Embeddings
+- Vectors
 - Transformers
-- Attention Mechanism
 - Pre-training 
 - Fine Tuning
-- Embeddings
-- Context Window
-- Language Model Benchmarking (GLUE and SuperGLUE)
+- RAG (Retrieval-Augmented Generation)
 
 
 <!--
+
+Ok so that was qite a  bit of information to take in. But let's simplify it a bit by looking at some key terms that you should know when working with LLMs, and thinking about LLMs:
+
+- Tokens: A token is a single unit of text. It could be a word, a phrase, a punctuation mark, or a number. Tokens are the building blocks of language models.
+
+- Embeddings: Embedding is the process of converting tokens into numerical representations that the model can understand. These numerical representations are called vectors.
+
+- Vectors: Vectors are lists of numbers that represent tokens in a sentence.
+
+- Transformers: Transformers are a type of neural network architecture that is used in LLMs. They are able to learn context and relationships between words in a sentence. They are the foundation of LLMs.
+
+- Pre-training: Pre-training is the process of training a model on a large dataset of text before fine-tuning it on a specific task. 
+
+- Fine Tuning: Fine-tuning is the process of training a pre-trained model on a specific task or dataset. It is used to adapt the model to a specific use case.
+
+- RAG: Retrieval-Augmented Generation: feeding a model a set of documents, and asking it to generate a response based that document. RAG is muuch less expensive than training a model from scratch, or fine tuning a model which can get pretty expensive.
+
+You will hear and have probably heard these words being thrown around all the time online when folks talk about LLMs. So it's good to know what they mean.
 
 -->
 
@@ -306,23 +347,12 @@ layout: intro
 transition: fade-out
 ---
 
-
-insert text needed here
-
-<!--
-
--->
-
----
-layout: intro
-transition: fade-out
----
-
-# How do you choose the right LLM?
-
+# How do I build with a pre-trained LLM?
 
 
 <!--
+
+There are a few ways to build with a pre-trained LLM, BUT today I want to introduce you to Langchain.
 
 -->
 
@@ -336,8 +366,9 @@ transition: fade-out
 
 
 <!--
-Langchain is a framework that was developed to make it easier for any developer to build their own LLM powered application. It currently suports 2 languages - Python and Javascript.
+Langchain is a framework that was developed to make it easier for any developer to build their own LLM powered application. It currently suports 2 languages - Python and Javascript and allows you to interact with multiple LLMs without losing your mind.
 
+So with Langchain you can use, GPT-4, Gemini, Claude, all in one place. And you can use then chain responses together to create a more complex response.
 
 -->
 
@@ -351,6 +382,55 @@ transition: fade-out
 
 <!--
 
+So for example, I have this demo here, and with Langchain, we have a simple LLMChain here where it revceives 1 input and generates 1 output. This is the simplest chain there is. There is also a sequential chain, where the output of the first chain is the input of the second chain and so on.
+
+So here I have 4 chains, and you can see here Im using the simple LLMChain to construct these, and Im using the GPT-4 model to generate the responses.
+
+When I run this code, you can see that the output is going to be from this final chain here and Im going to get some similar fragrances to the notes I inputted.
+
+These notes are coming from a dataset that I have and it's just a single line - line 5.
+
+But what if I wanted the LLM to take a look at my dataset and provode me with similar fragrances from my dataset? I can do that by convertinig my dataset into a document and then feeding that document to the LLM.
+
+Let's take a look at how we can accomplish that . . .
+
+
+So I have some comments here that's kinda telling us what we need to do.
+
+The first thing Im going to do is import all the necessary libraries and such I need from langchain. So I have the ChatOpenAI and OpenAIEmbeddings from openai, and I have the CharacterTextSplitter that's going to produce my tokens, then I have the CSVLoader that'll take my dataset and convert it into a document that I need. I hav ethe DocArryInMemorySearch that I'll use for my vectorstore and then I have this Markdown one that's going to format my display nicely here.
+
+Let's run this cell and then move on.
+
+so, first I need to create my document
+
+Then I need to split my text into characters
+
+Then I'm going to create my embeddings
+
+and finally my vectorstore - and I'll pass my tokens and embeddings to my vectorstore.
+
+Once that's done, I can perform a similarity search on my vectorstore and get the most similar fragrances to a fragrance I like.
+
+
+And there we go.
+
+Now let's take it a step further. We can create a retriever like this, then create a function that joins the documents that will be returned, then create a prompt template like this one, and notice a var called context - this context is the retriever which is our vectorstore.
+
+we can go ahead and create a rag prompt from our template then create a rag chain like this:
+context will be the retriever and also the qdocs function - the results from the retriever will be fed into qdocs for formatting, then we pass the rag prompt, the llm, this StrOutputParser to parse those strings and our display markdown function here. 
+
+When I run this, we should get a response.
+
+Oh! something's not right, hmm. I think my qdocs var need to be updated. Hmm, let me feed this error into gh copilot chat . . . ahh I see, it needs to be a function. OK let's make this a function . . .
+
+run the code again and hmm, output is crazzy LOL
+
+Oh! I see the problem I think, lemme ask copilot chat for help again.
+
+Yea, I need to make sure my display markdown also a function. Let's fix that.
+
+Ok, run this again and there we go, we have 3 similar frgrances that's coming right from our vectorstore! Working with LLMS and Langchain can be so fun because I can just switch the llm Im using by chaing one line here - and I can use any LLM I want. 
+
 -->
 
 ---
@@ -362,5 +442,9 @@ transition: fade-out
 
 
 <!--
+
+So, that's all I had for you today. If you want to keep learning more about LLMs, check out these resourtces an dif you want to jumpstart your generative AI journey, check out this repo for some resoiurces on getting started!
+
+Lemme know if you have questions, comments or just good vibes! Ok cool byee!
 
 -->
