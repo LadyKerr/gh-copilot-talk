@@ -320,7 +320,16 @@ Langchain essentially acts as a bridge between your application and the power of
 - What is an LLM?
     - AI -> ML -> DL -> NLP -> Generative AI -> LLM
     - Define and explain Large Language Models (LLMs)
-    - Key Terms and Definitions
+    - Popular Language Models Today
+- Step back: Brief History of LLMs
+- How do LLMs work? How were they built?
+    - Data Collection
+    - Transformer Architecture
+    - Training Process 
+    - Tokenization
+    - Optimization 
+    - Evaluation
+- Key Terms and Definitions
         - Tokens
         - Transformers
         - Attention Mechanism
@@ -329,20 +338,16 @@ Langchain essentially acts as a bridge between your application and the power of
         - Embeddings
         - Context Window
         - Language Model Benchmarking (GLUE and SuperGLUE)
-- Brief History of LLMs
-- How do LLMs work? How were they built?
-    - Data Collection
-    - Transformer Architecture
-    - Training Process 
-    - Tokenization
-    - Optimization 
-    - Evaluation
-- Popular Language Models Today
 - How do you choose the right LLM? https://youtu.be/tFHeUSJAYbE?si=dawN6BaPYxoh_92x&t=505 
     - Prompt Engineering
     - Fine Tuning
     - Build Your Own
+- Building with LLMS:
+    - LLM use cases
+    - use each model's api
+    - use a tool like LangChain
 - LangChain 
 - DEMO
+- Resources to learn more
 - Q&A
 
