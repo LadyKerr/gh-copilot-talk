@@ -1,6 +1,6 @@
 ---
 theme: seriph
-title: Beyond the Editor - tips to get the most out of GitHub Copilot
+title: LangChain, OpenAI, LLMs, Oh My! Finding your way home through AI
 background: https://cover.sli.dev
 favicon: ''
 font: Playfair Display
@@ -19,6 +19,12 @@ export:
 
 <!--
 Hello good morning! Thank you all for being here with me today to learn all about large Language Models.
+
+My goal today is to break down this technology in an easy to understand way so you can walk away feeling empowered to use them.
+
+Now, how many of you feel like LLMs came out of nowhere and are now everywhere? Like, even though they h ave been around for a whiile, they've never been this widesppread and easily accessible in the field. And all of a sudden it's vectors, and embedding and RAG like am I gonna take a shower with AI? LOL
+
+But seriously, I want to break down what LLMs are, how they work, and how you can build with them. And I want to show you how you can use Langchain to build your own LLM powered application.
 
 -->
 
@@ -67,7 +73,7 @@ transition: fade-out
 
 # What we'll cover:
 
-- What is an LLM?
+- What is an LLM? 
 - How do LLMs Work?
 - Key Terms to know
 - Building with LLMs?
@@ -95,9 +101,11 @@ h1 {
 }
 </style>
 
+
 <div class="absolute left-30px bottom-30px">
 @itsthatladydev
 </div>
+
 
 
 ---
@@ -118,43 +126,96 @@ image: https://github.com/LadyKerr/llms-oh-my/assets/47188731/0980bf0c-ed23-4f61
 transition: fade-out
 ---
 
-# Large Language Models
+# Large Language Model (LLM)
 
-- Have you used one before? 🤔
-
-- Do you know how they work? 🤯
-
-![Image](https://github.com/LadyKerr/llms-oh-my/assets/47188731/2f7df360-a359-4ff5-be27-aca41495d1d1)
-
+![llm-dalle](https://github.com/LadyKerr/langchain-openai-copilot/assets/47188731/2940e2e4-68e4-441f-a182-368cab80eaf6)
 
 <!--
 
-Now, how many of you have used an LLM before? Im expecting to see a lot of hands here because of ChatGPT
+Now, how many of you have used an LLM before? Im expecting to see a lot of hands here because of GPT-3
 And how many of you actually understand what an LLMs and how they work?
 
 -->
 
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
+
+
 ---
-layout: image-right 
+layout: center
 image:  https://github.com/LadyKerr/llms-oh-my/assets/47188731/c8bede3f-2b8f-4a36-88f8-57466eb25919
 transition: fade-out
 ---
 
-# What is an LLM?
+# Large:
+## requires large amounts of data
+<br />
 
-## Large - > 1 billion parameters (referes to LARGE corpus of data)
-## Language -> Text generation and understanding
-## Model -> A system that learns from data
+# Language:
+## understand and generate human language
+<br />
+
+# Model:
+## a system that learns from data
+
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
 
 <!--
 
 A large langage model is a type of generative AI that can generate human-like text. These models are trained on vast amounts of text data and are able to generate text that is coherent and contextually relevant.
 
+It is essentially a neural network that was trained on extensive amounts of text data to generate language related tasks. This includes language translation, text summarization, and text generation.
+
+Ok, great but what does that actually mean? Let's break it down a bit more . . .
+-->
+
+
+---
+layout: image
+image:  https://github.com/LadyKerr/llms-oh-my/assets/47188731/c8bede3f-2b8f-4a36-88f8-57466eb25919
+transition: fade-out
+---
+
+Breaking it down
+
+
+<!--
+
 But, when we talk about AI and their relationship with LLMs, we must look at the sort of hierachal relationship that exists between the two.
 
 AI can be considered as Mother - the parent of Machine Learning, Deep Learnig, Natural Language Processing, Generative AI and Large Language Models.
 
-AI is the research and implementation of systems that are able to pperform tasks intelligently.
+AI is the research and implementation of systems that are able to perform tasks intelligently.
 
 ML is where computers learn from data in order to make predictions. A key thing to remember about ML is that a model is the core output and the goal is to be able to make accurate predictions on new previously unseen data.
 
@@ -179,27 +240,43 @@ Some of the most common types of generative AI are:
 
 We'll be focusing on Large Language Models today.
 
-BUT you can see the relationship between AI and LLMs right? AI is Mother and LLMs are the children of AI. And thanks to the multi year advanmcements in AI, we now have LLMs that are being integrated into our daily lives in ways we never thought possible or only dreameed of.
+BUT you can see the relationship between AI and LLMs right? AI is Mother and LLMs are the children of AI. And thanks to the multi year advanmcements in AI, we now have LLMs that are being integrated into our daily lives in ways we never thought possible or only dreamed of.
 
 Some people dont think that LLMs are AI but when you look at these layers and how they relate to each other you can really see that without AI, LLMs would not exist.
 
 -->
 
-
 ---
-layout: intro
+layout: center
 transition: fade-out
 ---
 
 # Popular Language Models today 
 
-- Google Gemma
-- Anthropic Claude 
-- OpenAI GPT-4
-- Meta Llama3
-- Mistral AI Mistral
-- Microsoft phi3
-- TogetherAI
+- Google **Gemini**
+- Anthropic **Claude 3**
+- OpenAI **GPT-4**
+- Meta **Llama3**
+- Mistral AI **Mistral**
+
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
+
 
 <!--
 
@@ -212,33 +289,46 @@ Let's take a step back in history for a second.
 
 
 ---
-layout: intro
+layout: default
 transition: fade-out
 ---
 
 # Brief History of LLMs
 
-1925 - The Ising Model - the 1st RNN that did not learn
-1966 - ELIZA - the world's first chatbot and NLP model
-1972 - RNNs (Recurrent Neural Networks)
-1997 - LSTM (Long Short Term Memory) - a type of RNN that can learn long term dependencies
-2017 - Transformer Models
-2018 - GPT-1, the first large language model introduced by OPENAI, 117 million parameters
-2018 - BERT (Bidirectional Encoder Representations from Transformers), 340 million parameters
-2019 - GPT-2, 1.5 billion parameters
-2020 - GPT-3, 175 billion parameters
-2021: OpenAI Codex, natural language to code based on GPT-3
-2021: GitHub Copilot Preview, a code completion tool based on Codex
-2022: ChatGPT, a chatbot based on GPT-3
-2024: GPT-4, the next version of GPT, 1.76 trillion parameters
+```mermaid
+timeline
+    title History of Large Language Models
+    1925 : The Ising Model - the 1st RNN that did not learn
+    1966 : ELIZA - the world's first chatbot and NLP model
+    1972 : RNNs (Recurrent Neural Networks)
+    1997 : LSTM (Long Short Term Memory) - a type of RNN that can learn long term dependencies
+    2017 : Transformer Models
+```
 
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
 
 <!--
 
 In the 60's ELIZA was created by an MIT researcher and was able to hold a conversation with a human user by following a pre-written script.
 This was revolutionary at the time and many felt like they were talking to a real person.
 
-Flash forward a few years and we had RNNs and LSTMs. RNNs were actually able to learn. They were the first technology that was able to predict the  next word in a sentence and not have everything pre-programmed for it. REVOLUTIONARY! Basis for how current LLMs work and they're actually a part of popular tech today like Siri, Alexa and Google Translate.
+Flash forward a few years and we had RNNs and LSTMs. RNNs were actually able to learn. They were the first technology that was able to predict the  next word in a sentence and not have everything pre-programmed for it. REVOLUTIONARY! They're actually a part of popular tech today like Siri, Alexa and Google Translate.
 
 Long Short Term Memory were able to learn from data and generate text and started to revolutionize speech recognition and machine translation in the early 2000s.
 
@@ -249,6 +339,47 @@ These models were neural networks that were able to learn context, and find rela
 Because of transformers, we can produce an image from text, produce audio from text, create videos from text, and even generate code from text.
 
 They are also called Foundation Models and they use attention or self attention to figure out the subtleties of language. This was revolutionary and everytime we search on Google, we are using a transformer model.
+-->
+
+
+---
+layout: default
+transition: fade-out
+---
+
+# Brief History of LLMs (cont'd)
+
+```mermaid
+timeline
+  title History of Large Language Models
+    2018 : GPT-1, the first large language model introduced by OPENAI, 117 million parameters
+         : BERT (Bidirectional Encoder Representations from Transformers), 340 million parameters
+    2019 : GPT-2, 1.5 billion parameters
+    2020 : GPT-3, 175 billion parameters
+    2021 : OpenAI Codex, natural language to code based on GPT-3
+         : GitHub Copilot Preview, a code completion tool based on Codex
+    2022 : ChatGPT, a chatbot based on GPT-3
+    2024 : GPT-4, the next version of GPT, 1.76 trillion parameters
+```
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
+
+<!--
 
 Then in 2018, we got the Generative Pre-trained Transformer 1 (GPT-1), the first large language model introduced by OPENAI that utilized Google's Transformer model. It had 117 million parameters which is like.
 
@@ -263,20 +394,55 @@ ChatGPT was the first LLM that was able to hold a conversation with a human user
 And so, Transformers truly changed everything and is the basis for how LLMs work today. Let's take a deeper look at how LLMs actually work and how they were built.
 -->
 
+---
+layout: section
+transition: fade-out
+---
+
+# How were LLMs built?
+
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
+
 
 ---
 layout: intro
 transition: fade-out
 ---
 
-# How do LLMs Work? How were they built?
+<img src="https://github.com/LadyKerr/langchain-openai-copilot/assets/47188731/a682c207-22e2-433f-a50e-42919f2c03ff" alt="word cloud" >
 
-- Data Collection
-- Tokenization
-- Vectorization and Embedding
-- Training and Optimization
-- Evaluation and Testing
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
 
 <!--
 
@@ -310,15 +476,40 @@ layout: intro
 transition: fade-out
 ---
 
-## Key Terms to know
-- Tokens
-- Embeddings
-- Vectors
-- Transformers
-- Pre-training 
-- Fine Tuning
-- RAG (Retrieval-Augmented Generation)
+# Key LLM Terms to know
 
+
+```python {5-6|7|8|9|10|11|12|13|14|all}{lines:true, startLine:5}
+def llm_key_terms():
+  terms = {
+    'tokens': 'a single unit of text',
+    'embedding': 'convert tokens into vectors',
+    'vectors': 'numerical representations of tokens',
+    'vectorstore': 'a database that stores vectors',
+    'transformers': 'neural network architecture used in LLMs',
+    'pre-training': 'training a model on a large dataset of text',
+    'fine tuning': 'training a pre-trained model on a specific task',
+    'RAG' : 'prompting method that uses retrieval to add more context to a prompt',
+  }
+  return terms
+```
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
 
 <!--
 
@@ -336,36 +527,44 @@ Ok so that was qite a  bit of information to take in. But let's simplify it a bi
 
 - Fine Tuning: Fine-tuning is the process of training a pre-trained model on a specific task or dataset. It is used to adapt the model to a specific use case.
 
-- RAG: Retrieval-Augmented Generation: feeding a model a set of documents, and asking it to generate a response based that document. RAG is muuch less expensive than training a model from scratch, or fine tuning a model which can get pretty expensive.
+- RAG: Retrieval-Augmented Generation: feeding a model a set of documents, and asking it to generate a response based that document. The LLM will then use that data source to form it's responses.
+
+RAG is a prompting method that uses retrieval—a process for searching for and accessing information—to add more context to a prompt that generates an LLM response.
 
 You will hear and have probably heard these words being thrown around all the time online when folks talk about LLMs. So it's good to know what they mean.
 
 -->
 
 ---
-layout: intro
+layout: center
 transition: fade-out
 ---
 
-# How do I build with a pre-trained LLM?
+# Building with an LLM:
 
+<img src="https://github.com/LadyKerr/langchain-openai-copilot/assets/47188731/d494cf2f-48c2-451a-9ecb-96e28e837c03" alt="langchain">
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
 
 <!--
 
 There are a few ways to build with a pre-trained LLM, BUT today I want to introduce you to Langchain.
 
--->
-
----
-layout: intro
-transition: fade-out
----
-
-
-# The Langchain effect
-
-
-<!--
 Langchain is a framework that was developed to make it easier for any developer to build their own LLM powered application. It currently suports 2 languages - Python and Javascript and allows you to interact with multiple LLMs without losing your mind.
 
 So with Langchain you can use, GPT-4, Gemini, Claude, all in one place. And you can use then chain responses together to create a more complex response.
@@ -373,12 +572,30 @@ So with Langchain you can use, GPT-4, Gemini, Claude, all in one place. And you 
 -->
 
 ---
-layout: intro
+layout: section
 transition: fade-out
 ---
 
 # Live Demo
 
+## **repo**: gh.io/langchain-copilot
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
 
 <!--
 
@@ -440,6 +657,23 @@ transition: fade-out
 
 # Q&A and Resources
 
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
 
 <!--
 

@@ -224,7 +224,7 @@ Datasets are HUGE. I dont think we can comprehend how big these datasets are.
 
  ## Tokens visualized
 
-- 260 tokens look like this:
+- 260 tokens look like this: 
 - 100,000 tokens look like this:
 - 1,000,000 tokens look like this:
 - 1 billion tokens look like this:
