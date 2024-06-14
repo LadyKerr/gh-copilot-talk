@@ -1,7 +1,7 @@
 ---
 theme: seriph
 title: LangChain, OpenAI, LLMs, Oh My! Finding your way home through AI
-background: https://cover.sli.dev
+background: https://github.com/LadyKerr/langchain-openai-copilot/assets/47188731/8d1b4637-d51c-4045-b48e-952050e433c5
 favicon: ''
 font: Playfair Display
 layout: cover
@@ -67,18 +67,17 @@ introduce self
 
 
 ---
-layout: intro
+layout: center
 transition: fade-out
 ---
 
-# What we'll cover:
+# We'll answer the following questions:
 
-- What is an LLM? 
-- How do LLMs Work?
+- What is an LLM?
+- How were LLMs trained?
+- How did we get here?
 - Key Terms to know
-- Building with LLMs?
-- The Langchain effect
-- Live Demo
+- Demo with LangChain
 - Resources to learn more
 - Q&A 
 
@@ -154,10 +153,18 @@ h1 {
 @itsthatladydev
 </div>
 
+<!--
+Next
+A large langage model is a type of generative AI that can generate human-like text. These models are trained on vast amounts of text data and are able to generate text that is coherent and contextually relevant.
+
+It is essentially a neural network that was trained on extensive amounts of text data to generate language related tasks. This includes language translation, text summarization, and text generation.
+
+Ok, great but what does that actually mean? Let's break it down a bit more . . .
+-->
 
 ---
 layout: center
-image:  https://github.com/LadyKerr/llms-oh-my/assets/47188731/c8bede3f-2b8f-4a36-88f8-57466eb25919
+image: https://github.com/LadyKerr/llms-oh-my/assets/47188731/c8bede3f-2b8f-4a36-88f8-57466eb25919
 transition: fade-out
 ---
 
@@ -191,14 +198,13 @@ h1 {
 </div>
 
 <!--
+The word Large refers to the HUGE amounts of data that is needed to train these models. The more data you have, the better your model will be. This data can be collected from a variety of sources, such as books, articles, web scraping, transcripts, academic literature, etc.
 
-A large langage model is a type of generative AI that can generate human-like text. These models are trained on vast amounts of text data and are able to generate text that is coherent and contextually relevant.
+The word Language refers to the fact that these models are able to understand and generate human language. This includes language translation, text summarization, and text generation.
 
-It is essentially a neural network that was trained on extensive amounts of text data to generate language related tasks. This includes language translation, text summarization, and text generation.
+And model in this context is a system that learns from data.
 
-Ok, great but what does that actually mean? Let's break it down a bit more . . .
 -->
-
 
 ---
 layout: image
@@ -206,7 +212,6 @@ image:  https://github.com/LadyKerr/llms-oh-my/assets/47188731/c8bede3f-2b8f-4a3
 transition: fade-out
 ---
 
-Breaking it down
 
 
 <!--
@@ -352,14 +357,14 @@ transition: fade-out
 ```mermaid
 timeline
   title History of Large Language Models
-    2018 : GPT-1, the first large language model introduced by OPENAI, 117 million parameters
-         : BERT (Bidirectional Encoder Representations from Transformers), 340 million parameters
-    2019 : GPT-2, 1.5 billion parameters
-    2020 : GPT-3, 175 billion parameters
+    2018 : GPT-1, the first LLM by OPENAI, 117 million params
+         : BERT, Google's LLM, 340 million paramS
+    2019 : GPT-2, 1.5 billion params
+    2020 : GPT-3, 175 billion params
     2021 : OpenAI Codex, natural language to code based on GPT-3
          : GitHub Copilot Preview, a code completion tool based on Codex
     2022 : ChatGPT, a chatbot based on GPT-3
-    2024 : GPT-4, the next version of GPT, 1.76 trillion parameters
+    2024 : GPT-4, the next version of GPT, 1.76 trillion params
 ```
 
 <style>
@@ -651,11 +656,13 @@ Ok, run this again and there we go, we have 3 similar frgrances that's coming ri
 -->
 
 ---
-layout: intro
+layout: center
 transition: fade-out
 ---
 
-# Q&A and Resources
+# Resources
+
+repo: gh.io/langchain-copilot
 
 
 <style>
