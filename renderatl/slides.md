@@ -517,7 +517,6 @@ h1 {
 </div>
 
 <!--
-
 Ok so that was qite a  bit of information to take in. But let's simplify it a bit by looking at some key terms that you should know when working with LLMs, and thinking about LLMs:
 
 - Tokens: A token is a single unit of text. It could be a word, a phrase, a punctuation mark, or a number. Tokens are the building blocks of language models.
@@ -526,6 +525,7 @@ Ok so that was qite a  bit of information to take in. But let's simplify it a bi
 
 - Vectors: Vectors are lists of numbers that represent tokens in a sentence.
 
+- Vectors Store: a database that stores 
 - Transformers: Transformers are a type of neural network architecture that is used in LLMs. They are able to learn context and relationships between words in a sentence. They are the foundation of LLMs.
 
 - Pre-training: Pre-training is the process of training a model on a large dataset of text before fine-tuning it on a specific task. 
@@ -537,7 +537,6 @@ Ok so that was qite a  bit of information to take in. But let's simplify it a bi
 RAG is a prompting method that uses retrieval—a process for searching for and accessing information—to add more context to a prompt that generates an LLM response.
 
 You will hear and have probably heard these words being thrown around all the time online when folks talk about LLMs. So it's good to know what they mean.
-
 -->
 
 ---
@@ -689,3 +688,28 @@ So, that's all I had for you today. If you want to keep learning more about LLMs
 Lemme know if you have questions, comments or just good vibes! Ok cool byee!
 
 -->
+
+---
+layout: section
+transition: fade-out
+---
+
+# Thank you!
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-30px bottom-30px">
+@itsthatladydev
+</div>
+
