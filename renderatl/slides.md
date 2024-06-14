@@ -424,6 +424,38 @@ h1 {
 @itsthatladydev
 </div>
 
+---
+layout: image
+transition: fade-out
+---
+
+<img src="https://github.com/LadyKerr/langchain-openai-copilot/assets/47188731/ead843ab-4fef-47d3-a62c-8dcc409702b9" alt="words to tokens" >
+
+
+<style>
+h1 {
+  background-color: #E81CFF;
+  background-image: linear-gradient(45deg, #40C9FF 10%, #E81CFF 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+
+<div class="absolute left-0px bottom-0px">
+@itsthatladydev
+</div>
+
+<!--
+
+Ok so when we give a text to a language model, the text is broken up into tiny pieces called tokens. Each token is then converted into a numerical representation (vector) that the model can understand. The model then uses these numerical representations to generate text that is similar to the text it was trained on.
+
+Now how does this actually work? How does a model do all this?
+
+-->
 
 ---
 layout: intro
@@ -450,10 +482,6 @@ h1 {
 </div>
 
 <!--
-
-Ok so when we give a text to a language model, the text is broken up into tiny pieces called tokens. Each token is then converted into a numerical representation (vector) that the model can understand. The model then uses these numerical representations to generate text that is similar to the text it was trained on.
-
-Now how does this actually work? How does a model do all this?
 
 Training a LLM typically has the folowing staps:
 - Data Collection
