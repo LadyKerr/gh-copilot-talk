@@ -18,10 +18,8 @@ export:
   withClicks: false
 ---
 
-
-
 <!--
-Hello good morning! Thank you all for being here with me today to learn how to get the most ourt of GitHub Copilot.
+Hello good morning! Thank you all for being here with me today!I hope youve been enjoyng orientation, welcome to GitHub!
 -->
 
 ---
@@ -45,8 +43,6 @@ I love, love, love creating technical content on Instagram, Tiktok and sometimes
 
 **Find me online @itsthatladydev**
 
-<img src="" alt="social media images">
-
 <style>
 h1 {
   background-color: #E81CFF;
@@ -60,14 +56,9 @@ h1 {
 </style>
 
 <!--
+Hello! I'm Kedasha Kerr and Im a Developer Advocate here at GitHub. 
 
-Hello! I'm Kedasha Kerr and Im a Developer Advocate at GitHub. 
-
-Im super excited to talk to you about GitHub Copilot and how to get the most out of this tool. 
-
-I know that AI has been the most used buzz word in the tech industry as of late and sometimes we may have the expectation that the AI tool we're implenting will do all the work for us. But just as we need to learn how to use a new framework or library, we also need to learn how to make AI tools work for us to get the results that we need. 
-
-Today, I'll be sharing some pragmatic ways to get the most out of GitHub Copilot during your day to day development.
+Im super excited to talk to you about GitHub Copilot and how to get the most out of this tool.
 -->
 
 ---
@@ -205,11 +196,12 @@ transition: fade-out
 
 # Features of GitHub Copilot
 
-- Code Complete
-- Copilot Chat
+- Code Complete (inline suggestions)
+- Copilot Chat (inline and chat box)
+- Copilot Chat on Mobile!
 - Copilot in the CLI
-- Copilot PR Summaries
-- Copilot Knowledge bases
+- Copilot PR Summaries (ent)
+- Copilot Knowledge bases (ent)
 - Copilot Extensions (Public beta)
 - Copilot Autofix for CodeQL
 
@@ -245,7 +237,7 @@ transition: fade-out
 - 🛠️ Boilerplate code and frameworks
 - 🤷🏽‍♀️ Uncommon or confusing syntax
 - 🔗 Pattern matching
-- 👨🏽‍💻 Writing code faster
+- 👨🏽‍💻 Translate Code
 - ⛓️ Cron jobs and regex
 - 👀 Helping you remember things you forgot
 - 💻 Extending and refactoring existing code
@@ -329,75 +321,69 @@ h1 {
 </style>
 
 <!---
-Demo #1 - Split nutrition data in a new line so it's easier to read
 
+SLIDES: https://github.com/LadyKerr/gh-copilot-talk/blob/main/hubber-orientation/hubber-orientation-copilot-101.pdf
 
-Create a new file called `NutritionFacts.js`
-Add a high level comment to the top of the file:
+General demo:
+
+## Installation
+- open vscode and search for extension, install then auth
+- click "your copilot" and show settings page
+- back to editor, click on copilot icon at the bottom, show panel
+- click chat icon in panel 
+
+## IDE Demo
+- code complete: validate email address
+start typing to show code complete in action
 
 ```
-Create a component with the following specifications:
+import re
 
-1. the component must split the received string data at /n/n or /n and return a Typography component for each string
-2. the component must set a unique key for each Typography component
-3. the component must return a div with the Typography components and return null if the data is not a string
+emailToVerify = 'hello@email.com'
+match = re.match(r'[^@]+@[^@]+\.[^@]+', addressToVerify)
+
+if match == None:
+    print('Bad Syntax')
+    raise ValueError('Bad Syntax')
 
 ```
 
-This address tips: high level comment, open files, includes & references
+- use `/explain` to explain the code
+- ask copilot: 
+```
+Create an impressive creative coding demo in python for 8,000 engineers at the developer week conference. This must be splashy and very very impressive to make people want to use GitHub Copilot. Can you help me and make something please?
+```
+- save code in a new file
+- run with python <filename> (get an intentional error)
+- error message in terminal, highlight and have copilot explain
+- resolve error
+- run again (wow)
 
-———
+- ask copilot: 
 
-Demo #2: Add a Footer Component
- 
+```
+what else can I add to the game?
+```
 
-Prompt #1:
-Add a footer component that says Made with love by LadyKerr & GitHub Copilot
+- implement suggestions
+- ask: can I create wave sounds and save it as particle.wav?
 
-
-Prompt #2:
-Create a footer component with the following specifications:
-
-1. The footer must be fixed at the bottom of the page
-2. Use the Paper and Typography components from Material UI
-3. The footer text must say "Made with ❤️ by LadyKerr & GitHub Copilot"
-4. The text "GitHub Copilot" must be a link to https://copilot.github.com/ that opens in a new tab with alt text “GitHub copilot"
+- show slash commands, agents,
+- /test . . . and all
+- @github what can you do? how can I use git?
+- #file:game.py generate a readme file for this game
 
 
-> This address tips: high level comment, open files, includes & references, meaningful names
+## DOTCOM - Chat is Ent only currently
+**On devrel repo**
+- ask copilot: what are the most recent issues assigned to me?
+- ask copilot: summarize this issue
+- ask copilot: how do I create a markdown table?
+- ask: where can I find the file about video editing?
 
-
-——
-
-Demo 3: Add Documentation for a few functions
-
-Demo 4: Generate unit test for a function
-
-Demo 5: Check browser console for errors and have copilot explain it
-
-Demo 6: Click source control button and generate a commit message
-
-Demo 7: Copilot CLI explain a command and generate a command
-
-Demo 8: Copilot for PRs - generate a PR description
-
-Demo 9: Copilot on dotcom - ask questions about slidev repo
-
-——
-
-Demo 10: Add theme for material UI to app (if time)
-
-Prompt #1:
-
-how do I add the custom color "ffc500" to the appbar component?
-
-Your response if MUI:
-
-createMuiTheme is deprecated
-
-Prompt #2:
-
-where do I create the custom theme?
+- Push code and generate a summary
+- highlight code and ask for explanations/help
+- go to repo, highlight function, ask for help: https://github.com/LadyKerr/noseknows-demo
 
 -->
 
