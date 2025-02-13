@@ -1,9 +1,0 @@
-.slidev-layout.cover.text-center.slidev-page.slidev-page-1 {
-    background-image: url("https://github.com/LadyKerr/gh-copilot-talk/assets/47188731/f0d856b6-19ac-4dfc-acad-879db310f916") !important;
-}
-
-.slidev-layout.cover.text-center.slidev-page.slidev-page-5 {
-    background-image: url("https://github.com/LadyKerr/mealmetrics-copilot/assets/47188731/9ac867c8-1ac1-45a7-b2e1-66f20bce4ad0") !important;
-}
-
-/* override global styles that added linear gradient to background images that had the cover tyope layout */
