@@ -1,0 +1,10 @@
+#slideshow .slidev-layout.cover.text-center.slidev-page.slidev-page-1 {
+    background-image: url("https://github.com/user-attachments/assets/4c3d7039-2617-45f6-b5de-b856791404e9") !important;
+}
+
+.slidev-layout.cover.text-center.slidev-page.slidev-page-5 {
+    background-image: url("https://github.com/user-attachments/assets/4c3d7039-2617-45f6-b5de-b856791404e9") !important;
+}
+
+
+/* override global styles that added linear gradient to background images that had the cover tyope layout */
